@@ -1,8 +1,8 @@
-"use client";
-import React from "react";
-import { SparklesCore } from "../ui/sparkles";
-import "./Animation.css";
-import LetterPullup from "../magicui/letter-pullup";
+'use client'
+import React from 'react'
+import { SparklesCore } from '../ui/sparkles'
+import './Animation.css'
+import LetterPullup from '../magicui/letter-pullup'
 
 const Animation = () => {
   return (
@@ -19,11 +19,10 @@ const Animation = () => {
         />
       </div>
       <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl xl:text-9xl font-bold text-center text-white relative z-20 -mt-10">
-        <LetterPullup words={"Welcome to KIITInsight"} delay={0.05} />
+        <LetterPullup words={'Welcome to KIITInsight'} delay={0.05} />
       </h1>
-
     </div>
-  );
-};
+  )
+}
 
-export default Animation;
+export default Animation
