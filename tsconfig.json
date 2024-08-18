@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    // Existing options
+    "baseUrl": ".",
+    "jsx": "react-jsx",
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ]
+    },
+    
+    // Add these options
+    "target": "ES5",            // Or "ES2015", "ES2016", etc., if you want higher support
+    "lib": ["ES2015", "DOM"]    // Add "ES2015" for Promise support
+  }
+}

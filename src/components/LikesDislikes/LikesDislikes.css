@@ -1,0 +1,44 @@
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  gap: 5px;
+  padding: 10px;
+  border-radius: 0.5rem;
+  color: #ffffff; /* Added for text color */
+  box-shadow: inset 5px 5px 10px -1px rgba(0, 0, 0, 0.5),
+              inset -7px -7px 10px -1px rgba(60, 60, 60, 0.5);
+  transition: color 0.3s;
+}
+
+.btn:hover {
+  color: #0091ff; /* Interesting color on hover */
+}
+
+.thumb {
+  height: 30px;
+  width: 30px;
+  transition: all 0.3s;
+  fill: #888;
+}
+
+.thumb:hover {
+  transform: scale(1.1) rotate(-10deg);
+}
+
+.thumb.active {
+  fill: #21f35d;
+}
+
+.btn:nth-child(2) .thumb.active {
+  fill: rgb(185, 51, 51);
+}

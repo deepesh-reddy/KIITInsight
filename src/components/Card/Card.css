@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #1a1a1a;
+    /* padding: 30px; */
+    color: #f0f0f0;
+}
+
+.faculty-card-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    margin: 40px;
+    margin-top: 70px;
+}
+
+
+
+.card{
+    width: 90%;
+    max-width: 350px;
+    border-radius: 16px;
+    background: #2a2a2a;
+    padding: 50px 25px;
+    margin: 20px;
+    box-shadow: 10px 10px 10px -1px rgba(0, 0, 0, 0.5),
+                -10px -10px 10px -1px rgba(60, 60, 60, 0.5);
+}
+
+.card:hover {
+    transform: scale(1.02);
+    box-shadow: 15px 15px 15px -1px rgba(0, 0, 0, 0.5),
+               -15px -15px 15px -1px rgba(60, 60, 60, 0.5);
+  }
+
+.card .wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.profile{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 10px 10px 10px -1px rgba(0, 0, 0, 0.5),
+                -10px -10px 10px -1px rgba(60, 60, 60, 0.5);
+    overflow: hidden; 
+}
+
+.profile img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.wrapper h2{
+    color: rgba(255,255,255,0.9);
+    margin-top: 20px;
+    font-size: 1.5rem;
+}
+.wrapper h6{
+  color: rgba(255,255,255,0.9);
+  margin-top: 20px;
+  font-size: 1rem;
+}
+
+
+.wrapper p {
+    line-height: 1.6;
+    font-size: 1rem;
+    margin: 10px 0;
+    color: rgba(255,255,255,0.7);
+}
+
+.like-dislike-container {
+    --dark-grey: #f0f0f0;
+    --middle-grey: #b0b0b0;
+    --lightest-grey: linear-gradient(#3a3a3a, #2a2a2a);
+    --shadow: 0 5px 15px 0 #00000066;
+    --shadow-active: 0 5px 5px 0 #00000066;
+    --border-radius-main: 10px;
+    --border-radius-icon: 50px;
+    position: relative;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    cursor: default;
+    color: var(--dark-grey);
+    opacity: .9;
+    padding: 1.5rem;
+    font-weight: 600;
+    background: var(--lightest-grey);
+    max-width: max-content;
+    border-radius: var(--border-radius-main);
+    box-shadow: inset 5px 5px 10px -1px rgba(0, 0, 0, 0.5),
+                inset -7px -7px 10px -1px rgba(60, 60, 60, 0.5);
+    transition: .2s ease all;
+}
+
+.like-dislike-container:hover {
+    box-shadow: var(--shadow-active);
+}
+
+.like-dislike-container .tool-box {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    top: 0;
+    right: 0;
+    border-radius: var(--border-radius-main);
+}
+
+.like-dislike-container .btn-close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: .8rem;
+    height: .8rem;
+    color: transparent;
+    font-size: 0;
+    cursor: pointer;
+    background-color: #ff000080;
+    border: none;
+    border-radius: var(--border-radius-main);
+    transition: .2s ease all;
+}
+
+.like-dislike-container .btn-close:hover {
+    width: 1rem;
+    height: 1rem;
+    font-size: 1rem;
+    color: #ffffff;
+    background-color: #ff0000cc;
+    box-shadow: var(--shadow-active);
+}
+
+.like-dislike-container .btn-close:active {
+    width: .9rem;
+    height: .9rem;
+    font-size: .9rem;
+    color: #ffffffde;
+    --shadow-btn-close: 0 3px 3px 0 #00000066;
+    box-shadow: var(--shadow-btn-close);
+}
+
+.like-dislike-container .text-content {
+    margin-bottom: 1rem;
+    font-size: 18px;
+    line-height: 1.6;
+    cursor: default;
+}
+
+.like-dislike-container .icons-box {
+    display: flex;
+}
+
+.like-dislike-container .icons {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: .6;
+    margin: 0 0.5rem;
+    cursor: pointer;
+    user-select: none;
+    border: 1px solid var(--middle-grey);
+    border-radius: var(--border-radius-icon);
+    transition: .2s ease all;
+}
+
+.like-dislike-container .icons:hover {
+    opacity: .9;
+    box-shadow: var(--shadow);
+}
+
+.like-dislike-container .icons:active {
+    opacity: .9;
+    box-shadow: var(--shadow-active);
+}
+
+.like-dislike-container .icons .btn-label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0.5rem;
+    cursor: pointer;
+    position: relative;
+}
+
+.like-dislike-container .like-text-content {
+    border-right: 0.1rem solid var(--dark-grey);
+    padding: 0 0.6rem 0 0.5rem;
+    pointer-events: none;
+}
+
+.like-dislike-container .dislike-text-content {
+    border-left: 0.1rem solid var(--dark-grey);
+    padding: 0 0.5rem 0 0.6rem;
+    pointer-events: none;
+}
+
+.like-dislike-container .icons .svgs {
+    width: 1.3rem;
+    fill: #ffffff;
+    box-sizing: content-box;
+    padding: 10px 10px;
+    transition: .2s ease all;
+}
+
+/* Hide the default checkbox */
+.like-dislike-container .icons .input-box {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.like-dislike-container .icons #icon-like-regular {
+    display: block;
+}
+
+.like-dislike-container .icons #icon-like-solid {
+    display: none;
+}
+
+.like-dislike-container .icons:hover :is(#icon-like-solid, #icon-like-regular) {
+    animation: rotate-icon-like 0.7s ease-in-out both;
+}
+
+.like-dislike-container .icons #like-radio:checked ~ #icon-like-regular {
+    display: none;
+    animation: checked-icon-like 0.5s;
+}
+
+.like-dislike-container .icons #like-radio:checked ~ #icon-like-solid {
+    display: block;
+    animation: checked-icon-like 0.5s;
+}
+
+.like-dislike-container .icons #icon-dislike-regular {
+    display: block;
+    transform: rotate(180deg);
+}
+
+.like-dislike-container .icons #icon-dislike-solid {
+    display: none;
+    transform: rotate(180deg);
+}
+
+.like-dislike-container .icons:hover :is(#icon-dislike-solid, #icon-dislike-regular) {
+    animation: rotate-icon-dislike 0.7s ease-in-out both;
+}
+
+.like-dislike-container .icons #dislike-radio:checked ~ #icon-dislike-regular {
+    display: none;
+    animation: checked-icon-dislike 0.5s;
+}
+
+.like-dislike-container .icons #dislike-radio:checked ~ #icon-dislike-solid {
+    display: block;
+    animation: checked-icon-dislike 0.5s;
+}
+
+.like-dislike-container .icons .fireworks {
+    transform: scale(0.4);
+}
+
+.like-dislike-container .icons #like-radio:checked ~ .fireworks > .checked-like-fx {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    right: 40px;
+    animation: spreadfireworkslike 0.6s forwards ease-in;
+    pointer-events: none;
+}
+
+.like-dislike-container .icons #dislike-radio:checked ~ .fireworks > .checked-dislike-fx {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    left: 40px;
+    animation: spreadfireworksdislike 0.6s forwards ease-in;
+    pointer-events: none;
+}
+
+@keyframes rotate-icon-like {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes checked-icon-like {
+    0% { transform: rotate(360deg); }
+    100% { transform: rotate(0deg); }
+}
+
+@keyframes rotate-icon-dislike {
+    0% { transform: rotate(180deg); }
+    100% { transform: rotate(-180deg); }
+}
+
+@keyframes checked-icon-dislike {
+    0% { transform: rotate(-180deg); }
+    100% { transform: rotate(180deg); }
+}
+
+@keyframes spreadfireworkslike {
+    0% {
+        width: 10px;
+        height: 10px;
+    }
+    100% {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@keyframes spreadfireworksdislike {
+    0% {
+        width: 10px;
+        height: 10px;
+    }
+    100% {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .wrapper h2 {
+      font-size: 1.2rem;  /* Adjust as needed for mobile screens */
+    }
+    .wrapper h6 {
+      font-size: 0.9rem;  /* Adjust as needed for mobile screens */
+    }
+  }

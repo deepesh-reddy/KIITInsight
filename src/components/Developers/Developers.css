@@ -1,0 +1,118 @@
+.boxx {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #2a2a2a;
+  flex-wrap: wrap;
+  gap: 20px;
+  }
+  
+  .wrap,
+  .wrap .img-area,
+  .social-icons a,
+  .buttons button {
+    background: #2a2a2a;
+    box-shadow: 10px 10px 10px -1px rgba(0, 0, 0, 0.5),
+                -10px -10px 10px -1px rgba(60, 60, 60, 0.5);
+  }
+  
+  .wrap {
+    position: relative;
+    width: 350px;
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 90px;
+  }
+
+  
+  .wrap .img-area {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .img-area .inner-area {
+    height: calc(100% - 25px);
+    width: calc(100% - 25px);
+    border-radius: 50%;
+  }
+  
+  .inner-area img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .wrap .name {
+    font-size: 23px;
+    font-weight: 500;
+    color: #ffffff;
+    margin: 10px 0 5px 0;
+  }
+  
+  .wrap .about {
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 16px;
+  }
+  
+  .wrap .social-icons {
+    margin: 15px 0 25px 0;
+  }
+  
+  .social-icons a {
+    position: relative;
+    height: 40px;
+    width: 40px;
+    margin: 0 5px;
+    display: inline-flex;
+    text-decoration: none;
+    border-radius: 50%;
+  }
+  
+  .social-icons a:hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border-radius: 50%;
+    background: #2a2a2a;
+    box-shadow: 10px 10px 10px -1px rgba(0, 0, 0, 0.5),
+                -10px -10px 10px -1px rgba(60, 60, 60, 0.5);
+  }
+  
+  .social-icons a i {
+    position: relative;
+    z-index: 3;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    line-height: 40px;
+  }
+  
+  .wrap .social-icons a.facebook i {
+    color: #4267B2;
+  }
+  
+  .wrap .social-icons a.telegram i {
+    color: #0088cc;
+  }
+  
+  .wrap .social-icons a.instagram i {
+    color: #E1306C;
+  }
+  
+  .wrap .social-icons a.portfolio i {
+    color: #ffffff;
+  }
