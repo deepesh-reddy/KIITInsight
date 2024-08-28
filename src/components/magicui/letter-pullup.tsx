@@ -34,9 +34,7 @@ export default function LetterPullup({
           animate="animate"
           custom={i}
           className={cn(
-            "font-display text-center text-3xl sm:text-5xl md:text-6xl lg:text-8xl xl:text-8xl 2xl:text-9xl font-bold tracking-[-0.02em] text-white drop-shadow-sm dark:text-white md:leading-[5rem]",
-
-            "font-display text-center text-3xl sm:text-5xl md:text-6xl lg:text-8xl xl:text-9xl font-bold tracking-[-0.02em] text-white drop-shadow-sm dark:text-gray-200 md:leading-[5rem]"
+            "font-display text-center text-3xl sm:text-5xl md:text-6xl lg:text-8xl xl:text-8xl 2xl:text-9xl font-bold tracking-[-0.02em] text-white drop-shadow-sm dark:text-white md:leading-[5rem]"
           )}
         >
           {letter === " " ? <span>&nbsp;</span> : letter}
@@ -65,10 +63,7 @@ export default function LetterPullup({
           animate="animate"
           custom={splitWords[0].length + "KIIT".length + i}
           className={cn(
-            "font-display text-center text-3xl sm:text-5xl md:text-6xl lg:text-8xl xl:text-8xl 2xl:text-9xl font-bold tracking-[-0.02em] text-white drop-shadow-sm dark:text-white md:leading-[5rem]",
-
-            "font-display text-center text-3xl sm:text-5xl md:text-6xl lg:text-8xl xl:text-9xl font-bold tracking-[-0.02em] text-white drop-shadow-sm dark:text-gray-200 md:leading-[5rem]",
-            "font-display text-center text-3xl sm:text-5xl md:text-6xl lg:text-8xl xl:text-9xl font-bold tracking-[-0.02em] text-white drop-shadow-sm dark:text-white md:leading-[5rem]"
+            "font-display text-center text-3xl sm:text-5xl md:text-6xl lg:text-8xl xl:text-8xl 2xl:text-9xl font-bold tracking-[-0.02em] text-white drop-shadow-sm dark:text-white md:leading-[5rem]"
           )}
         >
           {letter === " " ? <span>&nbsp;</span> : letter}
