@@ -1,5 +1,3 @@
-"use client";
-
 import { motion } from "framer-motion";
 import { cn } from "../lib/utils";
 
@@ -36,7 +34,15 @@ export default function LetterPullup({
           animate="animate"
           custom={i}
           className={cn(
+<<<<<<< HEAD
             "font-display text-center text-3xl sm:text-5xl md:text-6xl lg:text-8xl xl:text-8xl 2xl:text-9xl font-bold tracking-[-0.02em] text-white drop-shadow-sm dark:text-white md:leading-[5rem]",
+=======
+<<<<<<< HEAD
+            "font-display text-center text-3xl sm:text-5xl md:text-6xl lg:text-8xl xl:text-9xl font-bold tracking-[-0.02em] text-white drop-shadow-sm dark:text-gray-200 md:leading-[5rem]",
+=======
+            "font-display text-center text-3xl sm:text-5xl md:text-6xl lg:text-8xl xl:text-9xl font-bold tracking-[-0.02em] text-white drop-shadow-sm dark:text-white md:leading-[5rem]",
+>>>>>>> 74fe1e750e568dde20232a4f1b873cc912fd5e60
+>>>>>>> 3c6b169fbb60fded6fdf9591c34b0a77d2a8b455
             className
           )}
         >
@@ -66,7 +72,15 @@ export default function LetterPullup({
           animate="animate"
           custom={splitWords[0].length + "KIIT".length + i}
           className={cn(
+<<<<<<< HEAD
             "font-display text-center text-3xl sm:text-5xl md:text-6xl lg:text-8xl xl:text-8xl 2xl:text-9xl font-bold tracking-[-0.02em] text-white drop-shadow-sm dark:text-white md:leading-[5rem]",
+=======
+<<<<<<< HEAD
+            "font-display text-center text-3xl sm:text-5xl md:text-6xl lg:text-8xl xl:text-9xl font-bold tracking-[-0.02em] text-white drop-shadow-sm dark:text-gray-200 md:leading-[5rem]",
+=======
+            "font-display text-center text-3xl sm:text-5xl md:text-6xl lg:text-8xl xl:text-9xl font-bold tracking-[-0.02em] text-white drop-shadow-sm dark:text-white md:leading-[5rem]",
+>>>>>>> 74fe1e750e568dde20232a4f1b873cc912fd5e60
+>>>>>>> 3c6b169fbb60fded6fdf9591c34b0a77d2a8b455
             className
           )}
         >
