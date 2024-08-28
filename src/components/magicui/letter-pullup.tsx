@@ -34,7 +34,11 @@ export default function LetterPullup({
           animate="animate"
           custom={i}
           className={cn(
+<<<<<<< HEAD
             "font-display text-center text-3xl sm:text-5xl md:text-6xl lg:text-8xl xl:text-9xl font-bold tracking-[-0.02em] text-white drop-shadow-sm dark:text-gray-200 md:leading-[5rem]",
+=======
+            "font-display text-center text-3xl sm:text-5xl md:text-6xl lg:text-8xl xl:text-9xl font-bold tracking-[-0.02em] text-white drop-shadow-sm dark:text-white md:leading-[5rem]",
+>>>>>>> 74fe1e750e568dde20232a4f1b873cc912fd5e60
             className
           )}
         >
@@ -64,7 +68,11 @@ export default function LetterPullup({
           animate="animate"
           custom={splitWords[0].length + "KIIT".length + i}
           className={cn(
+<<<<<<< HEAD
             "font-display text-center text-3xl sm:text-5xl md:text-6xl lg:text-8xl xl:text-9xl font-bold tracking-[-0.02em] text-white drop-shadow-sm dark:text-gray-200 md:leading-[5rem]",
+=======
+            "font-display text-center text-3xl sm:text-5xl md:text-6xl lg:text-8xl xl:text-9xl font-bold tracking-[-0.02em] text-white drop-shadow-sm dark:text-white md:leading-[5rem]",
+>>>>>>> 74fe1e750e568dde20232a4f1b873cc912fd5e60
             className
           )}
         >
