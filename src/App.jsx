@@ -7,11 +7,18 @@ import Developers from './components/Developers/Developers'
 import CsePage from './components/CsePage/CsePage'
 import UploadForm from './components/UploadForm/Upload'
 // import Developers from './components/Developers/Developers'
-import { BrowserRouter, Routes, Route, useNavigate } from 'react-router-dom'
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+  useNavigate,
+  useLocation,
+} from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
 import { checkLoginStatus } from './store/sllice/authSlice'
 
 function App() {
+  const location = useLocation()
   const navigate = useNavigate()
   const { isLogin } = useSelector((state) => state.auth)
   console.log(isLogin)
@@ -23,11 +30,13 @@ function App() {
   }, [])
   useEffect(() => {
     if (isLogin) {
-      navigate('/home')
+      if (location.pathname === '/') {
+        navigate('/home')
+      }
     } else {
       navigate('/')
     }
-  }, [isLogin])
+  }, [isLogin, navigate])
   return (
     <>
       <Routes>
@@ -35,6 +44,7 @@ function App() {
         <Route path="/home" element={<Home />} />
         <Route path="/home/developers" element={<Developers />} />
         <Route path="/home/cse" element={<CsePage />} />
+        <Route path="/upload" element={<UploadForm />} />
       </Routes>
 
       {/* <Developers/> */}

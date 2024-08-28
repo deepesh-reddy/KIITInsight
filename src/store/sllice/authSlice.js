@@ -3,7 +3,7 @@ import { server } from '../../main'
 import axios from 'axios'
 
 const initialState = {
-  isLogin: false,
+  isLogin: localStorage.getItem('isLogin') || false,
   token: null,
   user: [],
   message: '',
